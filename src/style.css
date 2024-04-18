@@ -1,5 +1,5 @@
 body{
-    background-color: #f0f0f0;
+    background-color:white;
     font-family:  "Sedan", serif;
     font-style: normal;
       }
@@ -11,4 +11,74 @@ body{
     margin: 45px auto;
     padding: 20px;
     border-radius: 10px;
+}
+
+a{
+    color: #436850;
+}
+
+.search-box{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.search-box-input{
+    background-color:white;
+    height: 45px;
+    width: 50%;
+    padding: 10px;
+    border: 0.5px solid #436850;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.search-box-submit{
+    background-color:#436850;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Sedan", serif;
+    cursor: pointer;
+}
+
+.weather-info-city{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.weather-info-temp{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 28px;
+
+}
+
+.weather-info-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.weather-forecast-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    font-size: 18px;
+
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: black;
 }

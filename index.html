@@ -5,42 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
   <title>Weather App</title>
 </head>
 <body>
     <div class="weatherapp">
      <div class="search-box">
-        <input type="search" placeholder="Enter a city..." required>
-        <input type="submit" value="Search">
+        <input type="search" placeholder="Enter a city..." required class="search-box-input">
+        <input type="submit" value="Search" class="search-box-submit">
      </div>
-    <main>
-     <div class="weather-info">
-        <h1>Singapore</h1>
-        <h2>30°C</h2>
-        <p> Thursday 10:08, heavy rain ⛈️⛈️
-            <br />
-            Humidity: 90%
-        </p>
-     </div>
+    
+     <main>
+        <div class="weather-info">
+            <h1 class="weather-info-city">Singapore</h1>
+            <p class="weather-info-temp">30°C</p>
+            <p class="weather-info-details"> Thursday 10:08 , heavy rain ⛈️⛈️
+                <br /> Humidity: 90%
+            </p>
+        </div>
 
-     <div class="day-forecast">
-        <p>Mon</p>
-        <p>🌞</p>
-        <p>28-30°C</p>
-     </div>
-
-     <div class="day-forecast">
-        <p>Tue</p>
-        <p>🌦️</p>
-        <p>28-31°C</p>
-     </div>
-
-     <div class="day-forecast">
-        <p>Wed</p>
-        <p>⛅</p>
-        <p>28-31°C</p>
-     </div>
-    </main>
+        <div class="weather-forecast-container">
+             <div class="day1-forecast">
+                <p>Mon</p>
+                <p>🌞  28-30°C</p>
+             </div>
+            
+             <div class="day2-forecast">
+                <p>Tue</p>
+                <p>🌦️  28-31°C</p>
+             </div>
+            
+             <div class="day3-forecast">
+                <p>Wed</p>
+                <p>⛅  28-31°C</p>
+             </div>
+        </div>
+     </main>
 
 
     <footer> Designed by 
