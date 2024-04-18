@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
@@ -21,9 +22,11 @@
      <main>
         <div class="weather-info">
             <h1 class="weather-info-city" id="city">Singapore</h1>
-            <p class="weather-info-temp">30°C</p>
-            <p class="weather-info-details"> Thursday 10:08 , heavy rain ⛈️⛈️
-                <br /> Humidity: 90%
+            <p class="weather-info-temp" id="weather-info-temp">30</p>
+            <p class="weather-info-time" id="weather-info-time">Thursday 10:08    
+                <class="weather-info-details">   Heavy rain ⛈️⛈️
+            </p>
+                Humidity:<strong id="weather-info-humidity"> 90% </strong>
             </p>
         </div>
 
