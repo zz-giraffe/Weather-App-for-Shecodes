@@ -12,14 +12,15 @@
 </head>
 <body>
     <div class="weatherapp">
-     <div class="search-box">
-        <input type="search" placeholder="Enter a city..." required class="search-box-input">
+      <form class="search-box" id="search-box">
+        <input type="search" placeholder="Enter a city..." required id="search-box-input" class="search-box-input">
         <input type="submit" value="Search" class="search-box-submit">
-     </div>
+      </form>
+   
     
      <main>
         <div class="weather-info">
-            <h1 class="weather-info-city">Singapore</h1>
+            <h1 class="weather-info-city" id="city">Singapore</h1>
             <p class="weather-info-temp">30°C</p>
             <p class="weather-info-details"> Thursday 10:08 , heavy rain ⛈️⛈️
                 <br /> Humidity: 90%
@@ -51,5 +52,7 @@
         and website hosted on <a href="https://myweatherapprr.netlify.app">Netlify</a> 
     </footer>
   </div>
+
+    <script src="src/index.js"></script>
 </body>
 </html>
