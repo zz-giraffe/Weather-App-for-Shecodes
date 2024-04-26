@@ -1,8 +1,12 @@
 function displayWeather(response) {
     let temperatureElement = document.querySelector("#weather-info-temp");
     let cityElement = document.querySelector("#city");
+    let descriptionElement = document.querySelector("#description");
+
+
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML = Math.round(response.data.temperature.current) + "°C";
+    descriptionElement.innerHTML = response.data.weather.description;
    
 }
 
